@@ -1,0 +1,7 @@
+1. SELECT movie_name, release_date FROM movies;
+2. SELECT first_name,last_name FROM directors WHERE nationality = 'American';
+3. SELECT * FROM actors WHERE date_of_birth > '1970-1-1';
+4. SELECT movie_name FROM movies WHERE movie_length > 90 AND movie_lang = 'English';      
+5. SELECT movie_name,movie_lang FROM movies WHERE movie_lang = 'English' OR movie_lang = 'Spanish' OR movie_lang = 'Korean';
+6. SELECT first_name,last_name FROM actors WHERE LEFT(last_name,1) = 'M' AND date_of_birth BETWEEN '1940-1-1' AND '1969-12-31'; ||  SELECT first_name,last_name FROM actors WHERE last_name LIKE 'M%' AND date_of_birth BETWEEN '1940-1-1' AND '1969-12-31';
+7. SELECT first_name,last_name FROM directors WHERE nationality = 'British' or nationality = 'French' or nationality = 'German' AND date_of_birth BETWEEN '1950-1-1' AND '1980-12-31';
